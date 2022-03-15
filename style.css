@@ -1,0 +1,220 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+header {
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    border-bottom: solid 1px #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header_inner {
+    max-width: 1152px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header_name {
+    height: auto;
+    margin-left: 0%;
+}
+
+.header_navgroup {
+    margin-left: auto;
+    display: flex;
+    flex: none;
+    align-items: center;
+}
+
+.header_navitem {
+    display: inline-block;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.header_navgroup>*+* {
+    margin-left: 60px;
+}
+
+.hamburger_modal {
+    display: none;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9998;
+}
+
+.hamburger {
+    display: none;
+    width: 70%;
+    height: 100vh;
+    background-color: #ffffffdd;
+    border-left: solid 1px #ccc;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.hamburger_btn {
+    margin: 0 0 0 auto;
+    display: none;
+    color: #00abae;
+}
+
+.top_img {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.top_img img{
+    position: absolute;
+    width: 100%;
+}
+
+.content_items {
+    padding: 50px 0 70px;
+    width: 100%;
+}
+
+.content_inner_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.content_inner_area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news_items {
+    padding: 20px 5%;
+    margin: 10px auto;
+}
+
+.news_item {
+    display: inline-block;
+    border-bottom: solid 1px lightskyblue;
+}
+.news_date {
+    color:aqua;
+    font-weight: inherit;
+    margin-left: 20%;
+}
+
+.news_text {
+    margin-left: 10%;
+    font-weight: inherit;
+}
+
+.menu_copy {
+    font-size: x-large;
+    color: aquamarine;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.menu_card {
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.menu_others_img {
+    margin-top: 20px;
+}
+
+.info_card {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.contact_text {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.contact_icon {
+    text-align: center;
+    vertical-align: top;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px){
+    .hamburger_btn {
+        display: block;
+    } 
+    .header_navgroup {
+        padding-top: 10%;
+    }
+    .header_navitem {
+        margin: 20px auto;
+        text-align: center;
+        display: block;
+    }
+}
+
